@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Website</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+<style>
+    body {
+        margin: 20px;
+    }
+    .content {
+        display: none;
+    }
+</style>
+
+<script>
+    function switchLanguage(lang) {
+        // Hide all language content
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function(content) {
+            content.style.display = 'none';
+        });
+        // Show the selected language content
+        document.getElementById(lang).style.display = 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Detect the browser language
+        var userLang = navigator.language || navigator.userLanguage;
+        var language = userLang.startsWith('de') ? 'de' : 
+                       userLang.startsWith('nl') ? 'nl' : 'en';
+        // Show content based on detected language
+        switchLanguage(language);
+
+        // Update dropdown to reflect detected language
+        document.getElementById('languageDropdown').value = language;
+    });
+</script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <h1>Speech for Pauline & Lukas</h1>
+            </li>
+            <li style="float: left;">
+            <select name="select" aria-label="Language"  id="languageDropdown" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="nl">Nederlands</option>
+            </select>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="en" class="content">
+        <h2>English Version</h2>
+        <p>Dear Pauline, dear Lukas,</p>
+
+<p>On a morning like this, having the opportunity to give a speech is both a blessing and a curse! A blessing because I have had the chance to listen to many previous speakers, had many role models to guide me, and I will be the last one to speak. But on the other hand, has everything not already been said? Aren’t you all filled with impressions and maybe not even receptive anymore after a recovery breakfast? Lukas asked me to give it a try – and yes, I love challenges, and – like many others – I rarely refuse him anything. I won’t promise to keep it short – I have adapted and focused what I want to say based on the moment.</p>
+
+<p>Lukas, I am your godmother, and more than 30 years ago, I was infinitely proud of my little sister when she gave birth to you. Michael and I proudly said yes to the role of godparents on your christening day. As godparents do, we accompanied you and supported your parents. Our shared journey has at times been close, at times distant – there were ups and downs, tensions and misunderstandings, many shared activities and conversations – your first flight on an airplane, vacations on Juist, Sardinia, and Spain, family celebrations, and later, meetups in Suderburg or Hamburg – to name just a few.</p>
+
+<p>From all these shared times, I would like to pick one period that was especially valuable to me. It was a time when things weren’t going well for you in the summer of 2021 – and that’s not why I’m choosing it. I speak fondly of this time because I experienced you, dear Lukas, as someone searching, someone who was deeply engaged with profound questions on the path to happiness. The seriousness with which you questioned yourself, tidied up your life, and sincerely tried to find your way and rekindle Pauline's affection. That impressed me. You once said that I played a part in the fact that you are together here today – but my dear, that’s not true – you did the work, all on your own!</p>
+
+<p>Back then, we often talked about a book by Stephen Covey and his ideas on the 7 Habits of Highly Effective People. I knew these ideas – but in a way, rediscovered them through you. As a gift today, I have brought you “The 7 Habits for Highly Effective Relationships.” I’d like to place these seven habits close to your hearts in the context of your time together. I’ve selected two habits for my speech – this is not a judgment, just my focus for today!</p>
+
+<p>I’ll start with the second habit: Begin with the End in Mind – today, at the beginning of your journey together and in the years to come, you have the power to shape your relationship – again and again. Things won’t stay as they are today, and you won’t stay the same either – and that’s a good thing. You grow together and can support each other in becoming the best version of yourselves. And that takes work, and it’s a lifelong adventure – you are not victims of life’s circumstances, you are the creators. And I’m confident you can do it because from the beginning, you had a vision for this celebration: a vision of the location, the setting, your guests, and how you wanted to celebrate, and you followed it through consistently – thank you for having the end in mind from the start!!</p>
+
+<p>Additionally, I’ve chosen the third habit: Put First Things First. The most important thing is you – not the family, not friends, or later children – a happy relationship is built by people who prioritize their relationship and don’t lose sight of each other. I’m sure you’ve proven that here. Many people said at the start – this won’t work. Portugal is too far, too exhausting, too expensive, too hot … you know the doubts. At the center of all these decisions for this wonderful celebration was your will to say yes, here, with these people, in this place, and I wish for you to keep this determined priority for each other! Your love is the guarantee for that, and we have no doubts about it.</p>
+
+<p>On this path, you walk together, and godparents step back, become observers, and rejoice quietly! Dear Pauline, dear Lukas – I am happy to have been a companion on your journey up to this point, and I am sure that now you can do it on your own! This was a wonderful celebration that you have shared with us, and I’m certain I speak on behalf of all those present – it was fantastic – from the first to the last moment – THANK YOU!</p>
+
+    </div>
+
+    <div id="de" class="content">
+        <h2>Deutsche Version</h2>
+        <p>Liebe Pauline, lieber Lukas,</p>
+
+<p>An einem Morgen wie diesem eine Redezeit zu erhalten, ist Segen und Fluch zugleich! Segen, denn ich konnte mir viele Vorredner anhören, hatte viele Vorbilder zur Orientierung, und ich werde die Letzte sein. Auf der anderen Seite, ist nicht alles gesagt? Seid ihr nicht alle voller Eindrücke und bei einem Katerfrühstück überhaupt nicht mehr aufnahmefähig? Lukas hat mich gebeten, es zu wagen – und ja, ich liebe Herausforderungen, und – wie viele andere – kann ich ihm selten etwas abschlagen. Ich verspreche nicht, mich kurz zu fassen – ich habe das, was ich sagen möchte, situativ angepasst und fokussiert.</p>
+
+<p>Lukas, ich bin deine Patentante und war vor mehr als 30 Jahren unendlich stolz auf meine kleine Schwester, als sie dir das Leben geschenkt hat. Michael und ich haben sehr stolz, an deinem Tauftag JA zu diesem Amt gesagt. Wir haben – wie es Paten tun – dich begleitet und deine Eltern unterstützt. Unser gemeinsamer Weg verlief mal eng und mal weit entfernt von einander – es gab Hochs und Tiefs, Spannungen und Missverständnisse, viele gemeinsame Aktivitäten und Gespräche – dein erster Flug mit einem Flugzeug, Urlaub auf Juist, Sardinien und in Spanien, Familienfeste und später Treffen in Suderburg oder Hamburg – um nur einige zu nennen.</p>
+
+<p>Von allen diesen gemeinsamen Zeiten möchte ich eine für mich wertvolle Zeit herauspicken. Es war eine Zeit, in der es euch nicht gut ging im Sommer 2021 – und das ist nicht der Grund für meine Wahl. Ich spreche gerne über diese Zeit, weil ich dich, lieber Lukas, da als einen suchenden Menschen erlebt habe, der sich intensiv auf dem Weg zum Lebensglück mit sehr tiefgreifenden Fragen beschäftigt hat. Die Ernsthaftigkeit, mit der du dich hinterfragt und in deinem Leben aufgeräumt hast und wie ehrlich du bemüht warst, deinen Weg zu finden und Pauline erneut für dich zu begeistern. Das hat mich beeindruckt. Du hast mal gesagt, dass ich Anteil daran habe, dass ihr hier heute zusammen seid – das, mein Lieber, stimmt so nicht – Du hast die Arbeit gemacht, Du ganz alleine!</p>
+
+<p>Wir haben damals oft über ein Buch von Stephen Covey und seine Ideen für die 7 Wege zur Effektivität im Leben gesprochen. Ich kannte diese – habe sie im Grunde durch dich neu entdeckt und habe als Geschenk heute für euch „Die 7 Wege zu glücklichen Beziehungen“ mitgebracht. Die sieben möchte ich euch in Analogie zu der Zeit ans Herz legen. Ich habe zwei für meine Rede ausgewählt – das ist keine Wertung, sondern vielmehr mein Fokus für den heutigen Tag!</p>
+
+<p>Ich starte mit dem 2. Weg: Schon am Anfang das Ende im Sinn haben – heute am Anfang eures gemeinsamen Wegs und in den folgenden Jahren habt ihr es in der Hand, eure Beziehung zu gestalten – immer wieder neu. Es bleibt nicht so wie heute, ihr bleibt nicht so wie heute, und das ist gut so. Ihr wachst gemeinsam und könnt einander dabei unterstützen, dass jeder die beste Version von sich selbst wird. Und das ist Arbeit und ein lebenslanges Abenteuer – ihr seid nicht Opfer irgendwelcher Lebensumstände, ihr seid Gestalter. Und ich bin sicher, dass ihr das könnt, denn ihr hattet von Anfang an ein Bild für dieses Fest vor Augen: ein Bild von der Location, von dem Setting hier, von euren Gästen und der Art, wie ihr feiern wolltet, und ihr habt das konsequent verfolgt – Danke, dass ihr schon am Anfang das Ende im Blick hattet!!</p>
+
+<p>Außerdem habe ich den 3. Weg ausgewählt: Das Wichtigste zuerst tun. Das Wichtigste seid ihr – nicht die Familie, die Freunde oder später die Kinder – eine glückliche Beziehung führen Menschen, die ihre Beziehung in den Mittelpunkt stellen und sich gegenseitig nicht aus den Augen verlieren. Ich bin sicher, das habt ihr hier bewiesen. Es gab viele, die am Anfang gesagt haben – das wird nicht gelingen. Portugal ist viel zu weit weg, das ist zu anstrengend, zu teuer, zu heiß … ihr kennt die Bedenken. Im Mittelpunkt all dieser Entscheidungen zu diesem wundervollen Fest stand euer Wille, JA zu sagen, hier, mit diesen Leuten und an diesem Ort, und ich wünsche euch, dass ihr euch diese entschlossene Priorität für einander beibehalten könnt! Dafür ist eure Liebe der Garant, und daran hegen wir keine Zweifel.</p>
+
+<p>Auf diesem Weg geht ihr zu zweit, und Paten treten zurück, werden Beobachter und freuen sich still! Liebe Pauline, lieber Lukas – ich bin glücklich, dass ich bis hierhin Wegbegleiter sein durfte, und ich bin sicher, dass ihr es jetzt alleine schafft! Das war ein wunderbares Fest, das ihr mit uns gefeiert habt, und ich bin sicher, dass ich im Namen aller Anwesenden spreche – das war Spitze – vom ersten bis zum letzten Moment – DANKE!</p>
+
+    </div>
+
+    <div id="nl" class="content">
+        <h2>Nederlandse Versie</h2>
+        <p>Lieve Pauline, lieve Lukas,</p>
+
+<p>Op een ochtend als deze een spreektijd krijgen is zowel een zegen als een vloek! Een zegen, omdat ik veel sprekers voor me heb kunnen horen, veel rolmodellen had om me op te richten, en ik de laatste zal zijn die spreekt. Maar aan de andere kant, is nog niet alles gezegd? Zijn jullie niet allemaal vol indrukken en misschien zelfs niet meer ontvankelijk na een katerontbijt? Lukas heeft me gevraagd om het te wagen – en ja, ik hou van uitdagingen, en – zoals zovelen – kan ik hem zelden iets weigeren. Ik beloof niet dat ik kort zal zijn – ik heb wat ik wil zeggen aangepast en gefocust op het moment.</p>
+
+<p>Lukas, ik ben je peettante en meer dan 30 jaar geleden was ik oneindig trots op mijn kleine zus toen zij jou het leven schonk. Michael en ik zeiden vol trots JA tegen het peetouderschap op je doopdag. Zoals peetouders doen, hebben we je vergezeld en je ouders gesteund. Onze gezamenlijke reis was soms dichtbij, soms ver van elkaar – er waren hoogte- en dieptepunten, spanningen en misverstanden, veel gezamenlijke activiteiten en gesprekken – je eerste vlucht met een vliegtuig, vakanties op Juist, Sardinië en Spanje, familiefeesten, en later ontmoetingen in Suderburg of Hamburg – om er maar een paar te noemen.</p>
+
+<p>Van al deze gezamenlijke tijden wil ik er één uitkiezen die voor mij bijzonder waardevol was. Het was een tijd waarin het niet goed met jullie ging in de zomer van 2021 – en dat is niet de reden voor mijn keuze. Ik spreek graag over die tijd omdat ik jou, lieve Lukas, toen heb ervaren als iemand die op zoek was, iemand die zich intensief bezighield met diepgaande vragen op weg naar levensgeluk. De ernst waarmee je jezelf in twijfel trok, je leven opruimde en oprecht probeerde je weg te vinden en Pauline opnieuw voor je te winnen, heeft me geraakt. Je zei ooit dat ik een aandeel had in het feit dat jullie hier vandaag samen zijn – maar mijn lieve, dat klopt niet – jij hebt het werk gedaan, helemaal alleen!</p>
+
+<p>In die tijd spraken we vaak over een boek van Stephen Covey en zijn ideeën over de 7 eigenschappen van effectief leiderschap. Ik kende deze ideeën al, maar door jou heb ik ze op een nieuwe manier ontdekt. Als cadeau heb ik vandaag voor jullie “De 7 eigenschappen voor gelukkige relaties” meegebracht. Ik wil jullie de zeven eigenschappen in het licht van jullie tijd samen aanbevelen. Voor mijn toespraak heb ik twee eigenschappen geselecteerd – dit is geen waardeoordeel, maar gewoon mijn focus voor vandaag!</p>
+
+<p>Ik begin met de tweede eigenschap: Begin met het eind in gedachten – vandaag, aan het begin van jullie gezamenlijke reis en in de komende jaren hebben jullie de macht om jullie relatie vorm te geven – steeds opnieuw. Het blijft niet zoals vandaag, jullie blijven niet zoals vandaag en dat is maar goed ook. Jullie groeien samen en kunnen elkaar steunen om de beste versie van jezelf te worden. En dat is werk en een levenslang avontuur – jullie zijn geen slachtoffers van levensomstandigheden, jullie zijn de makers. En ik ben ervan overtuigd dat jullie het kunnen, want vanaf het begin hadden jullie een beeld voor dit feest voor ogen: een beeld van de locatie, de setting hier, jullie gasten en hoe jullie wilden vieren, en jullie hebben dat consequent gevolgd – bedankt dat jullie vanaf het begin het einde in gedachten hadden!!</p>
+
+<p>Bovendien heb ik de derde eigenschap gekozen: Doe de belangrijkste dingen eerst. Het belangrijkste zijn jullie – niet de familie, de vrienden of later de kinderen – een gelukkige relatie wordt gevormd door mensen die hun relatie centraal stellen en elkaar niet uit het oog verliezen. Ik weet zeker dat jullie dat hier hebben bewezen. Er waren velen die aan het begin zeiden – dit gaat niet lukken. Portugal is veel te ver, te vermoeiend, te duur, te heet … jullie kennen de twijfels. In het middelpunt van al deze beslissingen voor dit prachtige feest stond jullie wil om hier, met deze mensen, op deze plek JA te zeggen, en ik wens jullie toe dat jullie deze vastberaden prioriteit voor elkaar kunnen behouden! Jullie liefde is de garantie daarvoor, en daar twijfelen we niet aan.</p>
+
+<p>Op deze weg gaan jullie samen en peetouders treden terug, worden waarnemers en verheugen zich stilletjes! Lieve Pauline, lieve Lukas – ik ben blij dat ik tot hier jullie reisgenoot mocht zijn, en ik ben er zeker van dat jullie het nu alleen kunnen! Dit was een prachtig feest dat jullie met ons hebben gevierd, en ik weet zeker dat ik namens alle aanwezigen spreek – het was fantastisch – van de eerste tot de laatste minuut – DANK JE WEL!</p>
+
+    </div>
+
+</body>
+</html>
